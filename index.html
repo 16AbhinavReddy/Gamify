@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gamify</h1>
+        <form id="gameForm">
+            <div class="upload-section">
+                <label for="imageInput" class="upload-label">
+                    <input type="file" id="imageInput" name="image" accept="image/*">
+                    <img id="selectedImage" src="#" alt="Selected Image">
+                </label>
+                <span id="uploadText">Choose a photo</span>
+            </div>
+            <button type="submit" class="predict-btn">Predict</button>
+        </form>
+        <div id="result" class="result"></div>
+        <h2> Other Games you can Try</h2>
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+</body>
+</html>

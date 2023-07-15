@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjusted to align to the top */
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+}
+
+.upload-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url("upload-icon.png");
+    background-size: cover;
+}
+
+.upload-text {
+    margin-top: 5px; /* Adjusted to move slightly towards the top */
+    text-align: center;
+}
+
+#imageInput {
+    display: none;
+}
+
+.predict-btn {
+    display: block;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.predict-btn:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.recommendations {
+    margin-top: 20px;
+}
+
+.recommendations h3 {
+    margin-bottom: 10px;
+}
+
+.recommendations p {
+    margin-bottom: 5px;
+}
+
+.recommendations a {
+    color: #007bff;
+    text-decoration: none;
+}
