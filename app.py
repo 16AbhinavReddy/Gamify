@@ -3,11 +3,15 @@ import re
 import numpy as np
 import shutil
 
+os.environ['CUDA_VISIBLE_DEVICES'] = ''
+
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import recommendation
+
+
 
 # Define a FastAPI app
 app = FastAPI()
